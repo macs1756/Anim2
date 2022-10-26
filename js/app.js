@@ -56,7 +56,7 @@ let dekor = document.querySelectorAll(".dekor");
 dekor.forEach(item=>{
 
 	function randomLeft() {	
-		let randoizer = -60 + Math.round(Math.random()*(160-60));
+		let randoizer = -5 + Math.round(Math.random()*(105-(-5)));
 		item.style.left = `${randoizer}vw`;
 	}
 	randomLeft();
