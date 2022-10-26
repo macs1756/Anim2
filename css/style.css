@@ -69,6 +69,10 @@ header {
   width: calc(200px + 270 * ((100vw - 320px) / 880));
 }
 
+.initial__img-3 {
+  width: calc(170px + 300 * ((100vw - 320px) / 880));
+}
+
 .footer__text {
   max-width: 320px;
   -webkit-transform: translateY(250px);
