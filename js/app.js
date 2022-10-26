@@ -29,7 +29,7 @@ const swiper = new Swiper('.swiper', {
 		eventsTarget: ".swiper",
 	},
 	direction: "vertical",
-	effect: "flip",
+	effect: "fade",
 	pagination: {
 		type: "bullets",
 		clickable: true,
@@ -40,7 +40,6 @@ const swiper = new Swiper('.swiper', {
 		nextEl: ".next",
 	},
 });
-
 
 
 
