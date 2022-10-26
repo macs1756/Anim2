@@ -43,4 +43,26 @@ const swiper = new Swiper('.swiper', {
 
 
 
+//
+
+
+
+let dekor = document.querySelectorAll(".dekor");
+
+
+
+
+
+dekor.forEach(item=>{
+
+	function randomLeft() {	
+		let randoizer = -60 + Math.round(Math.random()*(160-60));
+		item.style.left = `${randoizer}vw`;
+	}
+	randomLeft();
+	setTimeout(randomLeft,50)
+	setInterval(randomLeft, 4000);
+})
+
+
 

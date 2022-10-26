@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "SovMod";
+  font-display: swap;
+  src: url("../fonts/SovMod.woff2") format("woff2"), url("../fonts/SovMod.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -75,6 +83,9 @@ header {
 .dekor {
   position: absolute;
   z-index: -1;
+  -webkit-transition: all 4s linear;
+  -o-transition: all 4s linear;
+  transition: all 4s linear;
 }
 
 .dekor-11 {
@@ -83,28 +94,33 @@ header {
 }
 
 .dekor-12 {
-  bottom: 50px;
+  bottom: calc(120px + -70 * ((100vw - 320px) / 880));
   width: calc(120px + 305 * ((100vw - 320px) / 880));
 }
 
 .dekor-13 {
-  top: -20px;
+  top: calc(-20px + -30 * ((100vw - 320px) / 880));
   width: calc(150px + 295 * ((100vw - 320px) / 880));
 }
 
 .dekor-14 {
-  top: 30px;
-  width: calc(150px + 295 * ((100vw - 320px) / 880));
+  top: calc(30px + 40 * ((100vw - 320px) / 880));
+  width: calc(120px + 325 * ((100vw - 320px) / 880));
 }
 
-.initial__dekor-5 {
-  top: calc(30px + 70 * ((100vw - 320px) / 880));
-  width: calc(90px + 215 * ((100vw - 320px) / 880));
+.dekor-15 {
+  top: calc(30px + -30 * ((100vw - 320px) / 880));
+  width: calc(150px + 155 * ((100vw - 320px) / 880));
 }
 
-.initial__dekor-7 {
-  top: calc(20px + 50 * ((100vw - 320px) / 880));
-  width: calc(90px + 215 * ((100vw - 320px) / 880));
+.dekor-16 {
+  bottom: 220px;
+  width: calc(120px + 185 * ((100vw - 320px) / 880));
+}
+
+.dekor-17 {
+  top: calc(100px + 200 * ((100vw - 320px) / 880));
+  width: calc(90px + 365 * ((100vw - 320px) / 880));
 }
 
 * {
@@ -243,14 +259,6 @@ li {
   margin: 0;
 }
 
-@font-face {
-  font-family: SovMod;
-  font-display: swap;
-  src: url("../fonts/SovMod.woff2") format("woff2"), url("../fonts/SovMod.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
 body,
 html {
   scroll-behavior: smooth;
@@ -263,10 +271,6 @@ html {
   font-family: "SovMod";
   letter-spacing: 2px;
   font-weight: 500;
-}
-
-.scrollNone {
-  overflow: hidden;
 }
 
 img {
@@ -508,6 +512,10 @@ h2 {
         -ms-transform: translateY(0px);
             transform: translateY(0px);
   }
+
+  .dekor-17 {
+    top: 0px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -655,5 +663,9 @@ h2 {
 
   .initial__img-3 {
     width: calc(90px + 380 * ((100vw - 320px) / 880));
+  }
+
+  .dekor-17 {
+    top: 0;
   }
 }
